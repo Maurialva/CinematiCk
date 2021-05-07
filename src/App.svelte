@@ -16,7 +16,7 @@ function handleClick() {
 	<div align="right">
 	<!-- {src} is short for src={src} -->
 	<img align="left" {src} alt="{namel}" height="90" width="170" vertical-align="top" >
-	<a href="https://www.instagram.com/"> <img  src="logo_instagram.png"  alt="Instagram" height="60" width="60"></a>
+	<a  href="https://www.instagram.com/"> <img  src="logo_instagram.png"  alt="Instagram" height="60" width="60"></a>
 	<a href="https://www.facebook.com/"> <img  src="logo_facebook.png" alt="Facebook" height="60" width="60"></a>
 	<a href="https://www.twitter.com/"> <img  src="logo_twitter.png" alt="Twitter" height="60" width="60"></a>
 	<CustomButton on:click={handleClick} /> 
@@ -27,7 +27,7 @@ function handleClick() {
 		<br>
 		<form action="http://localhost:5000/">
 			
-		<input type="text" placeholder="Buscar..." name="searchbar" size="80%" >
+		<input type="text" placeholder="Buscar..." name="searchbar"  >
 		
 		<input type="image" src="icon_search1.png"alt="Submit"  />
 		<br>
@@ -40,28 +40,24 @@ function handleClick() {
 </main>
 <left>
 	<div id="cartelera">
-		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;
-			&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;Cartelera</h2> 
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg" alt="Instagram" height="300" width=""></a>
+		<h2>Cartelera</h2> 
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg" alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img  class="responsive"src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		<br><br>
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		<br><br>
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="responsive" src="p_sample.jpg"  alt="Instagram" height="300" width=""></a>
 		
 	
 	</div>
@@ -76,7 +72,7 @@ function handleClick() {
 	<div id="destacada">
 		<h2>destacada</h2>
 		<figure >
-		<a href="https://www.instagram.com/"> <img  src="p_sample.jpg" alt="Instagram" height="300" width=""></a>
+		<a href="https://www.instagram.com/"> <img class="destacada" src="p_sample.jpg" alt="Instagram" height="300" width=""></a>
 		<figcaption>TITULO</figcaption>
 	</figure>
 	</div>
@@ -101,7 +97,7 @@ function handleClick() {
 		max-width: 240px;
 		margin: 0 auto;
 		background-color: black;
-		width: 200;
+		width: 90%;
 	}
 	
 	body {
@@ -131,6 +127,7 @@ function handleClick() {
 		text-transform: uppercase;
 		font-size: 2em;
 		font-weight: 10;
+		text-align: center;
 	}
 	.search-container
 	{
@@ -149,7 +146,8 @@ function handleClick() {
 		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
 		color: rgb(255, 255, 255); 
 		border-radius: 50px; 
-	}
+		width:80%;
+		}
 	input[type=text]:Click
 	{
 		text-align: center;
@@ -163,7 +161,7 @@ function handleClick() {
 	input:focus {  border-image: #000000; }
 	input[type=image]{
 
-	max-width: 60px;
+	max-width: 80px;
 	max-height: 60px;
 	font-size: 17px;
 	border: none;
@@ -183,9 +181,10 @@ function handleClick() {
 	text-align: left;
 	border: 5px solid rgb(65, 9, 9);
 	border-radius: 50px;
-	width: 740px;
-	padding: 20px;
-	margin: 10px;
+	width: 63%;
+	padding: 1%;
+	margin: 1%;
+	text-align: center;
 	}
 	#suscripcion
 	{
@@ -194,9 +193,9 @@ function handleClick() {
 	text-align: center;
 	border: 5px solid rgb(65, 9, 9);
 	border-radius: 50px;
-	width: 250px;
-	padding: 20px;
-	margin: 10px;
+	width: 25%;
+	padding: 1%;
+	margin: 1%;
 	}
 	#destacada
 	{
@@ -205,9 +204,9 @@ function handleClick() {
 	text-align: center;
 	border: 5px solid rgb(65, 9, 9);
 	border-radius: 50px;
-	width: 250px;
-	padding: 20px;
-	margin: 10px;
+	width: 25%;
+	padding: 1%;
+	margin: 1%;
 	}
 	:global(figure)
 	{
@@ -237,5 +236,17 @@ function handleClick() {
 	margin: 10px;
 	}
 
+	.responsive
+	{
+		width: 30%;
+  		
+  		height: auto;
+	}
+	.destacada
+	{
+		width: 80%;
+  		
+  		height: auto;
+	}
 
 </style>
