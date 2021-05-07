@@ -4,24 +4,21 @@
 
 <style>
 	button {
-		height: 4rem;
-		width: 9rem;
+		height: 100%;
+		width: 60%;
 		background-color: rgb(90, 29, 29);
 		border-color: #693030;
-		font-size: 1.7rem;
-	
 		background-position: 100%;
 		background-size: 400%;
 		transition: background 900ms ease-in-out;
 		text-align: center;
 		color: rgb(0, 0, 0); 
-		font-size: 22px; 
-		line-height: 15px; 
-		padding: 12px; 
+		font-size: 150%; 
+		padding: 1%; 
 		border-radius: 50px; 
 		background-image: linear-gradient(45deg,rgb(65, 9, 9) 0%, rgb(158, 80, 80) 56%, rgb(54, 12, 12) 100%); 
 		vertical-align:top ;
-		border: 2px solid rgb(47, 6, 6); 
+		border: 10% solid rgb(47, 6, 6); 
 		display: inline-block;
 		cursor: pointer;
 	}

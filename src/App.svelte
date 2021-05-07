@@ -15,12 +15,13 @@ function handleClick() {
 <div id="header">
 	<div align="right">
 	<!-- {src} is short for src={src} -->
-	<img align="left" {src} alt="{namel}" height="90" width="170" vertical-align="top" >
-	<a  href="https://www.instagram.com/"> <img  src="logo_instagram.png"  alt="Instagram" height="60" width="60"></a>
-	<a href="https://www.facebook.com/"> <img  src="logo_facebook.png" alt="Facebook" height="60" width="60"></a>
-	<a href="https://www.twitter.com/"> <img  src="logo_twitter.png" alt="Twitter" height="60" width="60"></a>
+	<img align="left" {src} alt="{namel}" class="logo" height="90" width="170" vertical-align="top" >
+	<a  href="https://www.instagram.com/"> <img  class= "socialicon" src="logo_instagram.png"  alt="Instagram" height="60" width="60"></a>
+	<a href="https://www.facebook.com/"> <img class= "socialicon" src="logo_facebook.png" alt="Facebook" height="60" width="60"></a>
+	<a href="https://www.twitter.com/"> <img  class= "socialicon"src="logo_twitter.png" alt="Twitter" height="60" width="60"></a>
 	<CustomButton on:click={handleClick} /> 
 	<br><br>
+	<br>
 	</div>
 	<div class="search-container">
 		
@@ -66,7 +67,7 @@ function handleClick() {
 <right>
 	<div id="suscripcion">
 <h2>Suscribirse</h2>
-<input type="text" placeholder="Email..." name="suscrip"  >
+<input type="text" placeholder="Email..." name="suscrip"  ><br>
 <CustomB on:Click={handleClick} /> 
 	</div>
 	<div id="destacada">
@@ -117,7 +118,7 @@ function handleClick() {
 	{
 		color: #750c0c;
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 25px;
 		font-weight: 100;
 	}
 	:global(h2)
@@ -125,7 +126,7 @@ function handleClick() {
 		vertical-align:middle;
 		color: #750c0c;
 		text-transform: uppercase;
-		font-size: 2em;
+		font-size: 200%;
 		font-weight: 10;
 		text-align: center;
 	}
@@ -141,7 +142,8 @@ function handleClick() {
 	{
 		vertical-align:middle;
 		text-align: center;
-		font-size: 18px; 
+		font-size: 25px;
+		
 		border: brown;
 		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
 		color: rgb(255, 255, 255); 
@@ -161,9 +163,9 @@ function handleClick() {
 	input:focus {  border-image: #000000; }
 	input[type=image]{
 
-	max-width: 80px;
-	max-height: 60px;
-	font-size: 17px;
+		width: 6%;
+  		
+  		height: auto;
 	border: none;
 	cursor: pointer;
 	vertical-align:middle;
@@ -248,5 +250,17 @@ function handleClick() {
   		
   		height: auto;
 	}
-
+	.socialicon
+	{
+		width: 6%;
+  		
+  		height: auto;
+	}
+	.logo
+	{
+		width: 17%;
+  		
+  		height: auto;
+	
+	}
 </style>
