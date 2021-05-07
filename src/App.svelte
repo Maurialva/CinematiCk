@@ -78,17 +78,15 @@ function handleClick() {
 	</figure>
 	</div>
 </right>
-<div id="footer">
-	<a href="http://localhost:5000/"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<footer>
+	<a class="foot" href="http://localhost:5000/"> INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://localhost:5000/"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="foot"  href="http://localhost:5000/"> SOBRE NOSOTROS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://localhost:5000/"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="foot" href="http://localhost:5000/"> CONTACTO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="http://localhost:5000/"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-	
-</div>
+	<a class="foot" href="http://localhost:5000/"> AYUDA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</footer>
 </body>
 
 <style>
@@ -124,6 +122,19 @@ function handleClick() {
   		
   		height: auto;
 		}
+		footer {
+			font-size: 100%;
+
+		}
+		input[type=text] 
+		{
+			font-size: 150%;
+		}
+		.responsive{
+			width: 30%;
+  		
+  		height: auto;
+		}
 
 	}
 
@@ -135,11 +146,30 @@ function handleClick() {
 		}
 		right{
 			font-size: 25%;
+			padding: 0.5%;
+			margin: 0.5%;
+			border: 2px;
+			height: auto;
 		}
 		left
 		{
 			font-size: 25%;
 			width: 30%;
+			padding: 0.5%;
+			margin: 0.5%;
+			border: 2px ;
+  		height: auto;
+		}
+		footer {
+			font-size: 25%;
+
+		}
+		input[type=text] 
+		{
+			font-size: 50%;
+		}
+		.responsive{
+			width: 20%;
   		
   		height: auto;
 		}
@@ -172,7 +202,7 @@ function handleClick() {
 	{
 		vertical-align:middle;
 		text-align: center;
-		font-size: 25px;
+		
 		
 		border: brown;
 		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
@@ -183,7 +213,7 @@ function handleClick() {
 	input[type=text]:Click
 	{
 		text-align: center;
-		font-size: 18px; 
+		
 		border: brown;
 		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
 		color: rgb(255, 255, 255); 
@@ -211,9 +241,9 @@ function handleClick() {
 	float: left;
 	align-self: left;
 	text-align: left;
-	border: 5px solid rgb(65, 9, 9);
+	border: 4px solid rgb(65, 9, 9);
 	border-radius: 50px;
-	width: 63%;
+	width: 53%;
 	padding: 1%;
 	margin: 1%;
 	text-align: center;
@@ -223,7 +253,7 @@ function handleClick() {
 		float: right;
 	align-self: center;
 	text-align: center;
-	border: 5px solid rgb(65, 9, 9);
+	border: 4px solid rgb(65, 9, 9);
 	border-radius: 50px;
 	width: 25%;
 	padding: 1%;
@@ -255,7 +285,7 @@ function handleClick() {
 		font-size: 1em;
 		font-weight: 10;
 }
-	#footer
+	footer
 	{
 		background-image: linear-gradient(rgb(65, 9, 9) 0%, rgb(158, 80, 80) 50%, rgb(54, 12, 12) 100%);
 	float:left;
@@ -263,15 +293,14 @@ function handleClick() {
 	text-align: center;
 	
 	border-radius: 50px;
-	width: 90%;
-	padding: 20px;
-	margin: 10px;
+	width: 100%;
+	padding: 1%;
+	margin: 1%;
+	
 	}
 
 	.responsive
 	{
-		width: 30%;
-  		
   		height: auto;
 	}
 	.destacada
@@ -293,4 +322,5 @@ function handleClick() {
   		height: auto;
 	
 	}
+	
 </style>
