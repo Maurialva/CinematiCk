@@ -27,7 +27,7 @@ function handleClick() {
 		<br>
 		<form action="http://localhost:5000/">
 			
-		<input type="text" placeholder="Buscar..." name="searchbar" size="100" >
+		<input type="text" placeholder="Buscar..." name="searchbar" size="80%" >
 		
 		<input type="image" src="icon_search1.png"alt="Submit"  />
 		<br>
