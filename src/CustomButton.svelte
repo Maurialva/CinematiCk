@@ -5,7 +5,7 @@
 <style>
 	button {
 		height: 100%;
-		width: 10%;
+		width: 30%;
 		background-color: rgb(90, 29, 29);
 		border-color: #693030;
 		background-position: 100%;

@@ -109,9 +109,39 @@ function handleClick() {
 		background-color: black;
 		
 	}
-	@media (min-width: 640px) {
+	@media screen and (min-width: 240px) {
 		main {
 			max-width: none;
+			font-size: 80%;
+		}
+		right{
+			font-size: 100%;
+		}
+		left
+		{
+			font-size: 100%;	
+			width: 30%;
+  		
+  		height: auto;
+		}
+
+	}
+
+	@media screen and (max-width: 600px) {
+  
+		main {
+			max-width: none;
+			font-size: 25%;
+		}
+		right{
+			font-size: 25%;
+		}
+		left
+		{
+			font-size: 25%;
+			width: 30%;
+  		
+  		height: auto;
 		}
 	}
 	:global(h1)
