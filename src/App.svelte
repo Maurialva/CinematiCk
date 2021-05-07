@@ -220,7 +220,13 @@ function handleClick() {
 		border-radius: 20px; 
 		
 	}
-	input:focus {  border-image: #000000; }
+	input:focus {  border-image: #000000; 
+	outline: none;
+	background-image: -moz-repeating-linear-gradient(rgb(141, 141, 141),rgb(19, 17, 17)); 
+	}
+	input:hover{
+		background-image: -moz-repeating-linear-gradient(rgb(141, 141, 141),rgb(19, 17, 17)); 
+	}
 	input[type=image]{
 
 		width: 6%;
