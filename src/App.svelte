@@ -5,7 +5,7 @@
 let src = 'logocinematick.jpg';
 	let namel = 'logo';
 function handleClick() {
-	alert('clicked');
+	location.href='login.html';
 	
 }import CustomB from './ButtonSubscribe.svelte';
 </script>
@@ -68,7 +68,7 @@ function handleClick() {
 	<div id="suscripcion">
 <h2>Suscribirse</h2>
 <input type="text" placeholder="Email..." name="suscrip"  ><br>
-<CustomB on:Click={handleClick} /> 
+<CustomB on:click={handleClick} /> 
 	</div>
 	<div id="destacada">
 		<h2>destacada</h2>
@@ -202,30 +202,27 @@ function handleClick() {
 	{
 		vertical-align:middle;
 		text-align: center;
-		
-		
+		transition: background 900ms ease-in-out;
+		background-color: rgb(90, 29, 29);
+		background-position: 100%;
+		background-size: 200%;
 		border: brown;
-		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
+		background-image: linear-gradient(90deg,rgb(17, 12, 12) 0%, rgb(75, 21, 21) 56%, rgb(70, 17, 17) 100%);		
 		color: rgb(255, 255, 255); 
 		border-radius: 50px; 
 		width:80%;
 		}
-	input[type=text]:Click
-	{
-		text-align: center;
-		
-		border: brown;
-		background-image: -moz-repeating-linear-gradient(black,rgb(65, 9, 9)); 
-		color: rgb(255, 255, 255); 
-		border-radius: 20px; 
-		
-	}
+	
 	input:focus {  border-image: #000000; 
 	outline: none;
-	background-image: -moz-repeating-linear-gradient(rgb(141, 141, 141),rgb(19, 17, 17)); 
+	background-position: 0;
+	transition: background 900ms ease-in-out;
+	background-image: linear-gradient(43deg,rgb(0, 0, 0) 0%, rgb(37, 26, 26) 56%, rgb(39, 4, 4) 100%); 
 	}
 	input:hover{
-		background-image: -moz-repeating-linear-gradient(rgb(141, 141, 141),rgb(19, 17, 17)); 
+		background-position: 0;
+		transition: background 900ms ease-in-out;
+		background-image: linear-gradient(43deg,rgb(0, 0, 0) 0%, rgb(37, 26, 26) 56%, rgb(39, 4, 4) 100%); 
 	}
 	input[type=image]{
 

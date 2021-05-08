@@ -1,4 +1,4 @@
-<button on:Click>
+<button on:click>
 	SUMARSE
 </button>
 
